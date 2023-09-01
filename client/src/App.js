@@ -1,25 +1,63 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <main>
+      <header>
+        <a  className="logo">MYblog</a>
+        <nav>
+          <a >Login</a>
+          <a >Register</a>
+        </nav>
       </header>
-    </div>
-  );
+
+      
+      <div className="post">
+        <div className="image">
+          <img src="https://www.technewsworld.com/wp-content/uploads/sites/3/2023/03/AI-chip.jpg" alt="" />
+        </div>
+        <div className="texts">
+          <h2>Are Gen AI Benefits Worth the Risk?</h2>
+          <p className="info">
+            <a className="author">Rishabh</a>
+            <time>2/9/2023 02:11</time>
+          </p>
+          <p className="summary">Tools like ChatGPT potential of generative AI in diverse sectors. However, concerns over false information propagation, and potential job loss underline the need for caution and regulation.</p>
+        </div>
+      </div>
+
+
+      <div className="post">
+        <div className="image">
+          <img src="https://www.technewsworld.com/wp-content/uploads/sites/3/2023/03/AI-chip.jpg" alt="" />
+        </div>
+        <div className="texts">
+          <h2>Are Gen AI Benefits Worth the Risk?</h2>
+          <p className="info">
+            <a className="author">Rishabh</a>
+            <time>2/9/2023 02:11</time>
+          </p>
+          <p className="summary">Tools like ChatGPT potential of generative AI in diverse sectors. However, concerns over false information propagation, and potential job loss underline the need for caution and regulation.</p>
+        </div>
+      </div>
+
+
+      <div className="post">
+        <div className="image">
+          <img src="https://www.technewsworld.com/wp-content/uploads/sites/3/2023/03/AI-chip.jpg" alt="" />
+        </div>
+        <div className="texts">
+          <h2>Are Gen AI Benefits Worth the Risk?</h2>
+          <p className="info">
+            <a className="author">Rishabh</a>
+            <time>2/9/2023 02:11</time>
+          </p>
+          <p className="summary">Tools like ChatGPT potential of generative AI in diverse sectors. However, concerns over false information propagation, and potential job loss underline the need for caution and regulation.</p>
+        </div>
+      </div>
+      
+    </main>
+  )
 }
 
-export default App;
+export default App
