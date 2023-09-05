@@ -48,7 +48,7 @@ const LoginPage = () => {
           values = {password}
           onChange={e=>{
             setPassword(e.target.value)
-          }}
+          }} 
           placeholder='Password'
           />
         <button>Login</button>
