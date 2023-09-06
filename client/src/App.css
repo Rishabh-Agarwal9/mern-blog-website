@@ -7,13 +7,14 @@ a{
   cursor: pointer;
 }
 body{
+  background-color: #F3FDE8;
   color: #222;
 }
 
 main{
   padding: 10px;
   /* sets maximum thickness of content */
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 img{
@@ -36,6 +37,7 @@ header a{
 header a.logo{
   font-size: 2rem;
   font-weight: bold;
+  font-family: 'Oswald', sans-serif;
 }
 
 header nav{
