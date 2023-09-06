@@ -115,13 +115,12 @@ form.login form.register h1{
   text-align: center;
 }
 
-div.post-page image{
-  max-height: 200px; 
+div.post-page div.image{
+  max-height:400px;
   display: flex;
-  overflow: hidden;
+  overflow:hidden;
 }
-
-div.post-page image img{
+div.post-page div.image img{
   object-fit: cover;
   object-position: center center;
   width: 100%;
@@ -162,7 +161,7 @@ div.post-page a.edit-btn{
   gap: 5px;
   text-decoration: none;
   padding: 15px 30px;
-  border-radius: 5px;
+  border-radius: 10px;
 
 }
 

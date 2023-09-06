@@ -60,12 +60,14 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.get("/profile", (req, res) => {
-  const { token } = req.cookies;
-  jwt.verify(token, secret, {}, (err, info) => {
-    if (err) throw err;
-    res.json(info);
-  });
+app.get('/profile', (req,res) => {
+  const {token} = req.cookies;
+  if(token){
+    jwt.verify(token, secret, {}, (err,info) => {
+      if (err) throw err;
+      res.json(info);
+    }); 
+  }
 });
 
 app.post("/logout", (req, res) => {
@@ -142,6 +144,12 @@ app.get('/post/:id', async (req,res)=>{
   const {id} = req.params;
   const postDoc = await Post.findById(id).populate("author","username");
   res.json(postDoc);
+});
+
+
+app.delete('/post/:id', async (req,res)=>{
+  const {id} = req.params;
+  await Post.deleteOne({_id:id});
 });
 
 
